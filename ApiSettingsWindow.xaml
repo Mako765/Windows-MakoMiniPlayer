@@ -1,0 +1,96 @@
+﻿<Window x:Class="MakoMiniPlayer.ApiSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="API Postavke" Height="380" Width="420"
+        Background="#1a1a1a" Foreground="White"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- OpenSubtitles -->
+        <TextBlock Grid.Row="0" Text="🔑 OpenSubtitles.com"
+                   Foreground="#0078d4" FontSize="14" FontWeight="Bold"
+                   Margin="0,0,0,4"/>
+        <TextBlock Grid.Row="1" Foreground="#888888" FontSize="11"
+                   Margin="0,0,0,10"
+                   Text="Registracija na opensubtitles.com → Consumer API"/>
+
+        <Grid Grid.Row="2" Margin="0,0,0,6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="API Key:" VerticalAlignment="Center" Foreground="#aaaaaa"/>
+            <TextBox x:Name="TxtOsApiKey" Grid.Column="1"
+                     Background="#333333" Foreground="White"
+                     BorderBrush="#555555" Padding="6,4"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="0,0,0,6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Username:" VerticalAlignment="Center" Foreground="#aaaaaa"/>
+            <TextBox x:Name="TxtOsUsername" Grid.Column="1"
+                     Background="#333333" Foreground="White"
+                     BorderBrush="#555555" Padding="6,4"/>
+        </Grid>
+
+        <Grid Grid.Row="4" Margin="0,0,0,16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Password:" VerticalAlignment="Center" Foreground="#aaaaaa"/>
+            <PasswordBox x:Name="TxtOsPassword" Grid.Column="1"
+                         Background="#333333" Foreground="White"
+                         BorderBrush="#555555" Padding="6,4"/>
+        </Grid>
+
+        <!-- SubDL -->
+        <TextBlock Grid.Row="5" Text="🆓 SubDL"
+                   Foreground="#00aa44" FontSize="14" FontWeight="Bold"
+                   Margin="0,0,0,4"/>
+        <TextBlock Grid.Row="6" Foreground="#888888" FontSize="11"
+                   Margin="0,0,0,10"
+                   Text="Registracija na subdl.com → Profile → API Key (besplatno)"/>
+
+        <Grid Grid.Row="7" Margin="0,0,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="API Key:" VerticalAlignment="Center" Foreground="#aaaaaa"/>
+            <TextBox x:Name="TxtSubDLApiKey" Grid.Column="1"
+                     Background="#333333" Foreground="White"
+                     BorderBrush="#555555" Padding="6,4"/>
+        </Grid>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="8" Orientation="Horizontal"
+                    HorizontalAlignment="Right" Margin="0,16,0,0">
+            <Button Content="Spremi" Width="80" Height="32"
+                    Background="#0078d4" Foreground="White"
+                    BorderThickness="0" Cursor="Hand"
+                    Margin="0,0,8,0"
+                    Click="BtnSave_Click"/>
+            <Button Content="Odustani" Width="80" Height="32"
+                    Background="#333333" Foreground="White"
+                    BorderThickness="0" Cursor="Hand"
+                    Click="BtnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
