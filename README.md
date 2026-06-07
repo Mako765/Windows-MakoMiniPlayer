@@ -61,3 +61,8 @@ This project is licensed under the GNU General Public License v3.0 — see the [
 ---
 
 Developed by Mako © 2026
+
+<img width="909" height="685" alt="Snimka zaslona 2026-06-07 214446" src="https://github.com/user-attachments/assets/8629ebe6-53b4-46f0-bad7-8e2425fb7097" />
+<img width="1143" height="960" alt="Snimka zaslona 2026-06-07 214407" src="https://github.com/user-attachments/assets/c69eb089-d894-4884-94c8-f9e73d8cfc31" />
+<img width="2507" height="1376" alt="Snimka zaslona 2026-06-07 214343" src="https://github.com/user-attachments/assets/d470d188-06c3-49b6-9b81-94abcb59b218" />
+
